@@ -1,7 +1,7 @@
 using Microsoft.EntityFrameworkCore;
-using AmberAlerting.Models;
+using TaskTimer.Models;
 
-namespace AmberAlerting.Data
+namespace TaskTimer.Data
 {
     public class AlertContext : DbContext
     {

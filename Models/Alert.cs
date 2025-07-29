@@ -1,6 +1,6 @@
 using System.ComponentModel.DataAnnotations;
 
-namespace AmberAlerting.Models
+namespace TaskTimer.Models
 {
     public class Alert
     {

@@ -1,6 +1,6 @@
 using Microsoft.AspNetCore.Mvc;
 
-namespace AmberAlerting.Controllers
+namespace TaskTimer.Controllers
 {
     public class HomeController : Controller
     {

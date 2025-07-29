@@ -1,9 +1,9 @@
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
-using AmberAlerting.Data;
-using AmberAlerting.Models;
+using TaskTimer.Data;
+using TaskTimer.Models;
 
-namespace AmberAlerting.Controllers
+namespace TaskTimer.Controllers
 {
     [ApiController]
     [Route("alerts")]

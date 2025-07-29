@@ -1,5 +1,5 @@
 using Microsoft.EntityFrameworkCore;
-using AmberAlerting.Data;
+using TaskTimer.Data;
 using System.Text.Json.Serialization;
 
 var builder = WebApplication.CreateBuilder(args);
