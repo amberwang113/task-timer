@@ -1,7 +1,7 @@
 ﻿{
   "openapi": "3.0.0",
   "info": {
-    "title": "AmberAlerting API",
+    "title": "TaskTimer API",
     "description": "A simple alert management system.",
     "version": "1.0.0"
   },
