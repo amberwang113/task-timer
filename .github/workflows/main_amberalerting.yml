@@ -1,7 +1,7 @@
 # Docs for the Azure Web Apps Deploy action: https://github.com/Azure/webapps-deploy
 # More GitHub Actions for Azure: https://github.com/Azure/actions
 
-name: Build and deploy ASP.Net Core app to Azure Web App - testaw
+name: Build and deploy ASP.Net Core app to Azure Web App - amberalerting
 
 on:
   push:
@@ -51,15 +51,15 @@ jobs:
       - name: Login to Azure
         uses: azure/login@v2
         with:
-          client-id: ${{ secrets.AZUREAPPSERVICE_CLIENTID_815B2F06E297460E8D8D6B463790D994 }}
-          tenant-id: ${{ secrets.AZUREAPPSERVICE_TENANTID_6FCC89F9A5674EEB952C32074105F75A }}
-          subscription-id: ${{ secrets.AZUREAPPSERVICE_SUBSCRIPTIONID_4730A450248E484BA214FCB416241284 }}
+          client-id: ${{ secrets.AZUREAPPSERVICE_CLIENTID_BC27D925F8474C4F81B3ECE9485D6A9A }}
+          tenant-id: ${{ secrets.AZUREAPPSERVICE_TENANTID_20E165EF27474461821A5FCD89FAB3EC }}
+          subscription-id: ${{ secrets.AZUREAPPSERVICE_SUBSCRIPTIONID_C7C9248A1FC34DCE8AC03253E6AA0D6B }}
 
       - name: Deploy to Azure Web App
         id: deploy-to-webapp
         uses: azure/webapps-deploy@v3
         with:
-          app-name: 'testaw'
+          app-name: 'amberalerting'
           slot-name: 'Production'
           package: .
           
