@@ -1,0 +1,120 @@
+@{
+    Layout = "_Layout";
+    ViewData["Title"] = "Task Best Practices";
+}
+
+<div class="container py-5">
+    <div class="text-center mb-5">
+        <h1 class="fw-bold display-5 text-dark">
+            <i class="fa-solid fa-lightbulb text-warning me-2"></i>
+            Task Writing Best Practices
+        </h1>
+        <p class="lead text-muted">Design clear, actionable tasks that get done faster and better.</p>
+    </div>
+
+    <div class="row g-4">
+        <div class="col-lg-8">
+            <!-- Principles -->
+            <div class="card shadow-sm border-0 mb-4">
+                <div class="card-body p-4">
+                    <h3 class="h5 text-dark mb-3"><i class="fa-solid fa-compass text-primary me-2"></i>Core Principles</h3>
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item">
+                            <strong>Be Specific:</strong> Write what success looks like. Avoid vague verbs like "handle" or "improve".
+                        </li>
+                        <li class="list-group-item">
+                            <strong>One Outcome:</strong> Each task should achieve a single clear outcome. Split multi-step goals.
+                        </li>
+                        <li class="list-group-item">
+                            <strong>Add Constraints:</strong> Include scope, deadline, owners, and dependencies.
+                        </li>
+                        <li class="list-group-item">
+                            <strong>Make it Verifiable:</strong> Define acceptance criteria someone else can check.
+                        </li>
+                        <li class="list-group-item">
+                            <strong>Keep It Small:</strong> Prefer tasks that fit within a single focused session.
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Structure -->
+            <div class="card shadow-sm border-0 mb-4">
+                <div class="card-body p-4">
+                    <h3 class="h5 text-dark mb-3"><i class="fa-solid fa-layer-group text-success me-2"></i>Recommended Structure</h3>
+                    <ol class="list-group list-group-numbered list-group-flush">
+                        <li class="list-group-item"><strong>Title:</strong> Short verb-first summary (e.g., "Add CSV export to reports").</li>
+                        <li class="list-group-item"><strong>Why:</strong> Brief context and the problem it solves.</li>
+                        <li class="list-group-item"><strong>Scope:</strong> What’s included and explicitly out-of-scope.</li>
+                        <li class="list-group-item"><strong>Deliverables:</strong> The artifacts produced (screens, docs, PRs).</li>
+                        <li class="list-group-item"><strong>Steps:</strong> Concrete checklist the assignee can follow.</li>
+                        <li class="list-group-item"><strong>Acceptance Criteria:</strong> Bullet list with testable statements.</li>
+                        <li class="list-group-item"><strong>Definition of Done:</strong> e.g., merged, deployed, and documented.</li>
+                    </ol>
+                </div>
+            </div>
+
+            <!-- Examples -->
+            <div class="card shadow-sm border-0">
+                <div class="card-body p-4">
+                    <h3 class="h5 text-dark mb-3"><i class="fa-solid fa-check-double text-info me-2"></i>Good vs. Better</h3>
+                    <div class="row g-3">
+                        <div class="col-md-6">
+                            <div class="p-3 border rounded bg-light">
+                                <div class="small text-muted">Good</div>
+                                <div class="fw-bold">"Improve login page"</div>
+                                <ul class="mt-2 mb-0 small">
+                                    <li>Ambiguous outcome</li>
+                                    <li>No user value specified</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="p-3 border rounded bg-white">
+                                <div class="small text-muted">Better</div>
+                                <div class="fw-bold">"Reduce login time under 1.2s by caching config and lazy-loading icons"</div>
+                                <ul class="mt-2 mb-0 small">
+                                    <li>Measurable target</li>
+                                    <li>Specific approach allowed, but flexible</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-lg-4">
+            <!-- Quick card -->
+            <div class="card border-0 shadow-sm sticky-top" style="top: 90px;">
+                <div class="card-body p-4">
+                    <h5 class="mb-3"><i class="fa-solid fa-list-check text-warning me-2"></i>Quick Checklist</h5>
+                    <ul class="small ps-3 mb-4">
+                        <li>Actionable title</li>
+                        <li>Outcome defined</li>
+                        <li>Scope clear</li>
+                        <li>Owner and due date</li>
+                        <li>Acceptance criteria</li>
+                    </ul>
+
+                    <h6 class="text-muted text-uppercase small">Template</h6>
+                    <pre class="bg-dark text-warning p-3 rounded small mb-0">
+Title: <em>Verb-first summary</em>
+Why: <em>Context and goal</em>
+Scope: <em>In/Out</em>
+Deliverables: <em>Artifacts</em>
+Steps: <em>Checklist</em>
+Acceptance: <em>Testable bullets</em>
+Done: <em>Merge/Deploy/Docs</em>
+                    </pre>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<style>
+    .list-group-item { border: 0; border-bottom: 1px solid #f0f0f0; }
+    .list-group-item:last-child { border-bottom: 0; }
+    pre { white-space: pre-wrap; }
+</style>

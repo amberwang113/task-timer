@@ -7,7 +7,7 @@
   },
   "servers": [
     {
-      "url": "https://amberalerting.azurewebsites.net"
+      "url": "https://easy-agent-test.azurewebsites.net"
     }
   ],
   "tags": [

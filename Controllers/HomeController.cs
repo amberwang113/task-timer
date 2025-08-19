@@ -8,5 +8,12 @@ namespace TaskTimer.Controllers
         {
             return View();
         }
+
+        [HttpGet("/tasks/best-practices")]
+        public IActionResult BestPractices()
+        {
+            ViewData["Title"] = "Task Best Practices";
+            return View();
+        }
     }
 }

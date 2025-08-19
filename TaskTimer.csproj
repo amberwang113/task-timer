@@ -12,10 +12,6 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Content Remove="swagger.json" />
-  </ItemGroup>
-
-  <ItemGroup>
     <None Include="swagger.json" />
   </ItemGroup>
 
