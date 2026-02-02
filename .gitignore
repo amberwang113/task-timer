@@ -56,3 +56,4 @@ nunit-*.xml
 .vs/
 appsettings.Development.json
 Properties/PublishProfiles/
+.github/
